@@ -1,0 +1,43 @@
+body#loginPage {
+  background-color: #0070BB;
+}
+
+#loginPage .form-wrapper {
+  min-width: 300px;
+  padding: 30px;
+  background-color: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#loginPage .logo-wrapper {
+  text-align: center;
+}
+
+#loginPage .form-wrapper button {
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 10px 0;
+  font-size: 17px;
+  background-color: #45AA34;
+  color: #ffffff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+#loginPage .form-wrapper button .spinner-icon {
+  display: none;
+}
+
+#loginPage .form-wrapper button.disabled {
+  opacity: 0.8;
+  background-color: #25581d;
+}
+
+#loginPage .form-wrapper button.disabled .spinner-icon {
+  display: inline-block;
+  margin: 1px 5px 1px 3px;
+  animation: animateSpinner linear 0.9s infinite;
+}

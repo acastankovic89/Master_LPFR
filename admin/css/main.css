@@ -1,0 +1,141 @@
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  background-color: #dce1e4;
+  color: #353535;
+  font-size: 14px;
+}
+
+.box {
+  background-color: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px 0 rgba(127, 127, 127, 0.35);
+  -moz-box-shadow: 0 0 3px 0 rgba(127, 127, 127, 0.35);
+  box-shadow: 0 0 3px 0 rgba(127, 127, 127, 0.35);
+}
+
+.box-bottom {
+  background-color: #ffffff;
+  -webkit-border-radius: 0 5px 5px 5px;
+  -moz-border-radius: 0 5px 5px 5px;
+  border-radius: 0 5px 5px 5px;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(127, 127, 127, 0.35);
+  -moz-box-shadow: 0 2px 3px 0 rgba(127, 127, 127, 0.35);
+  box-shadow: 0 2px 3px 0 rgba(127, 127, 127, 0.35);
+}
+
+textarea {
+  font-family: Arial, sans-serif;
+}
+
+.swal-button {
+  background-color: #006eb7;
+}
+
+.swal-button:hover {
+  background-color: #006eb7 !important;
+  opacity: 0.8;
+}
+
+.swal-button--cancel {
+  color: #555;
+  background-color: #efefef;
+}
+
+.swal-button--cancel:hover {
+  background-color: #efefef !important;
+}
+
+.swal-button--danger {
+  background-color: #c14444;
+}
+
+.swal-button--danger:hover {
+  background-color: #c14444 !important;
+}
+
+/*.ui-widget-header .ui-icon {*/
+/*    content: "\1F892";*/
+/*    background-image: none !important;*/
+/*}*/
+
+
+.ui-widget-content,
+.ui-widget-header {
+  color: #006eb7 !important;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border-color: #a6ce39 !important;
+  background-color: #c7ea66 !important;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active, .ui-button:active,
+.ui-button.ui-state-active:hover {
+  border-color: #006eb7 !important;
+  background: #2b88c5 !important;
+}
+
+
+@media (min-width: 992px) {
+  .hasDatepicker {
+    cursor: pointer;
+  }
+}
+
+@keyframes animateSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#jstreeRoot {
+  margin-bottom: 10px;
+  padding: 2px 16px;
+  background-color: #f9f0cb;
+  font-size: 15px;
+  color: #363636;
+}
+
+#jstreeRoot.root-selected {
+  background-color: #beebff;
+}
+
+.separator {
+  width: 100%;
+}
+
+a.cke_dialog_ui_button_ok {
+  border-color: #006eb7 !important;
+  background-color: #006eb7 !important;
+}
+
+a.cke_dialog_ui_button_ok span.cke_dialog_ui_button {
+  color: #ffffff !important;
+}
+
+#userInsertPage #changePasswordForm {
+  margin-top: 20px;
+}
+
+#userInsertPage .change-password-section {
+  width: 100%;
+}
+
+#userInsertPage .change-password-fields {
+  display: none;
+}
+
+#userInsertPage .button-wrapper {
+  position:relative;
+}

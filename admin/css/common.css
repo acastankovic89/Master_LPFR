@@ -1,0 +1,251 @@
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/******************* CONTAINERS ********************/
+.container {
+  width: 1280px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/******************* COMMON CLASSES *******************/
+
+.align-left {
+  text-align: left !important;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                   supported by Chrome and Opera */
+}
+
+.hidden {
+  display: inline-block !important;
+  visibility: hidden;
+}
+
+
+/******************* BACK TO TOP BUTTON ********************/
+#backTop {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  right: 20px;
+  bottom: 10px;
+  padding: 18px 5px;
+  background-color: #319db5;
+  border: 2px solid #319db5;
+  opacity: 0.7;
+  cursor: pointer;
+  text-align: center;
+  z-index: 12;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  border-radius: 90px;
+  display: none;
+}
+
+#backTop i {
+  display: inline-block;
+  padding: 6px;
+  border: 1px solid #fff;
+  border-width: 0 4px 4px 0;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#backTop:hover {
+  opacity: 1;
+}
+
+/******************* LOADER AND OVERLAY ********************/
+.page-overlay,
+.cta-overlay,
+.modal-inner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 210, 210, 1);
+  z-index: 998;
+  display: none;
+}
+
+#overlay {
+  display: block;
+}
+
+#loader,
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.cta-overlay {
+  position: absolute;
+  background-color: rgba(210, 210, 210, 0.7);
+}
+
+.cta-overlay .loader {
+  position: absolute;
+}
+
+/* dots */
+
+.loader-dots span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #006eb7;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  animation: animate_scaling 1.5s infinite ease-in-out;
+  transform: scale(0.3);
+}
+
+.loader-dots span:nth-child(2) {
+  margin: 0 4px;
+  animation-delay: 0.2s;
+}
+
+.loader-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes animate_scaling {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.3);
+  }
+}
+
+/******************* ELEMENT CENTER ********************/
+.element-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/******************* INITIALS ICON ********************/
+.initialsIcon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.initialsIcon .initials {
+  color: #8c8c8c;
+}
+
+
+/********************** TOOLTIP ***********************/
+.button-with-tooltip {
+  position: relative;
+  display: inline-block;
+  /*width: 34px;*/
+  /*height: 34px;*/
+}
+
+.button-with-tooltip .tooltip-container {
+  position: absolute;
+  top: -10000px;
+  left: 0;
+}
+
+.button-with-tooltip .tooltip-container .tooltip {
+  position: absolute;
+  width: 100px;
+  padding: 0;
+  font-size: 12px;
+  background-color: #393939;
+  color: #ffffff;
+  opacity: 0;
+  top: 0;
+  left: -8px;
+  text-align: center;
+  z-index: 1;
+  -webkit-transition: all 450ms ease;
+  -moz-transition: all 450ms ease;
+  -ms-transition: all 450ms ease;
+  -o-transition: all 450ms ease;
+  transition: all 450ms ease;
+  -webkit-transition-delay: 50ms;
+  transition-delay: 50ms;
+}
+
+.button-with-tooltip .tooltip-container .tooltip:before {
+  position: absolute;
+  left: 14px;
+  bottom: -6px;
+  content: "\f0dd";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #393939;
+  font-size: 19px;
+}
+
+.button-with-tooltip:hover .tooltip-container {
+  top: 0;
+}
+
+.button-with-tooltip:hover .tooltip-container .tooltip {
+  top: -32px;
+  opacity: 1;
+  padding: 5px 7px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
