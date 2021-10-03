@@ -1,0 +1,35 @@
+#errorPage .error-wrapper {
+  text-align: center;
+  color: #777777;
+}
+
+#errorPage .error-wrapper h1 {
+  margin-bottom: 20px;
+  color: #007cc5;
+  font-size: 160px;
+}
+
+#errorPage .error-wrapper h2 {
+  margin-bottom: 20px;
+}
+
+#errorPage .error-wrapper p {
+  margin-bottom: 20px;
+}
+
+#errorPage .error-wrapper a {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #45aa34;
+  color: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #errorPage .error-wrapper h1 {
+    font-size: 120px;
+  }
+}
